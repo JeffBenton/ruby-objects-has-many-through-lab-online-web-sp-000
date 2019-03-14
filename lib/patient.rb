@@ -11,6 +11,7 @@ class Patient
   end
   
   def appointments
+<<<<<<< HEAD
     Appointment.all.select { |appointment| appointment.patient.name == @name }
   end
   
@@ -20,5 +21,8 @@ class Patient
   
   def self.all
     @@all
+=======
+    Appointments.all.select { |appointment| appointment.patient.name == @name }
+>>>>>>> 7ac193a2c5796218e87ac10bec08ca69328e699e
   end
 end
